@@ -3,6 +3,7 @@ import * as path from 'path';
 import { unlink } from 'fs';
 
 class VideoService {
+    //function save video
     saveVideo(file) {
         try {
             const fileName = file.lolo.name;
@@ -15,7 +16,7 @@ class VideoService {
         }
         
     }
-
+    //function get video
     getVideo(id) {
         try {
             const fileName = id;
@@ -26,7 +27,7 @@ class VideoService {
             console.log(error)
         }
     }
-
+    //function delete video
     deleteVideo(id) {
         try {
             const fileName = id
